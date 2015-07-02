@@ -1,0 +1,22 @@
+{
+  "name": "gelar-maox-template",
+  "version": "0.0.1",
+  "authors": [
+    "dukerd <dukerd@dukerd.ru>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.2",
+    "owl-carousel": "~1.3.2"
+  },
+  "devDependencies": {
+    "saffron": "~0.2.2"
+  }
+}
