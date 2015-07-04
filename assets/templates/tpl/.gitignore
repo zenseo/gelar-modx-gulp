@@ -14,5 +14,4 @@ node_modules
 
 #ignore bower_components
 bower_components
-
-preview_img
+info
