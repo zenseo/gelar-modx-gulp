@@ -1,0 +1,102 @@
+/*====================================
+=            FOOTER style            =
+====================================*/
+
+footer{
+  height: 286px;
+  background: url(../img/footer-bg.jpg) #000;
+  overflow: hidden;
+  color:#fff;
+
+}
+footer nav {
+  @include grid-column(16);
+  text-align: center;
+  li {
+      padding: .5rem 1rem;
+      list-style:none;
+      display: inline-block;
+      text-transform: uppercase;
+      text-align: center;
+
+      a{color: #fff;}
+      a:hover{
+        border-bottom: 1px solid $gela1;
+      color: $gela1;}
+      &.active a{
+        border-bottom: 1px solid #fff;
+
+      }
+      ul {display: none;}
+  }
+}
+footer address{
+   @include grid-column(16);
+ //  background: #faf;
+  font-style: normal;
+  text-align: center;
+  a{
+    color:#fff;
+  }
+}
+footer .social{
+  @include grid-column(16);
+  text-align: center;
+  padding-top: 1rem;
+  li{
+    list-style:none;
+    display: inline-block;
+    height: 57px;
+    width: 57px;
+    border-radius:50%;
+    margin: 0 10px 0 0;
+    background: #fff url(../img/social-icons.png) no-repeat;
+    //  icons bg shift
+    &:nth-child(1){  background-position: -5px 0px;}
+    &:nth-child(2){  background-position: -71px 0px;}
+    &:nth-child(3){  background-position: -137px 0px;}
+    &:nth-child(4){  background-position: -206px 0px;}
+    &:nth-child(5){  background-position: -271px 0px;}
+    &:nth-child(6){  background-position: -345px 0px;}
+    &:nth-child(7){  background-position: -402px 0px;}
+    &:nth-child(8){  background-position: -470px 0px;}
+    &:nth-child(9){  background-position: -533px 0px;}
+  }
+}
+footer .design {
+  display: block;
+  background: url(../img/footer-dev-logo.png) center top   no-repeat;
+  height: 140px;
+  width: 110px;
+  position: absolute;
+  right: 0;
+  font-size: rem-calc(13);
+  color:#fff;
+  text-decoration: none;
+  padding-top: 66px;
+  text-align: center;
+  bottom: 30px;
+  &:hover{
+    color: #ff0;
+  }
+}
+footer .develop {
+  position: absolute;
+  right: 3px;
+  bottom: 46px;
+
+  font-size: rem-calc(12);
+  color:#fff;
+  text-decoration: none;
+  &:hover{
+    background: rgb(101, 11, 111);
+  }
+}
+footer .copyright {
+    @include grid-column(16);
+  text-align: center;
+  margin-top: -20px;
+  font-size: rem-calc(14);
+}
+/*-----  End of FOTER  ------*/
+
