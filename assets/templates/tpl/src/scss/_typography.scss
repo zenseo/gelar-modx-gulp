@@ -50,6 +50,8 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-serif;
 }
+
+
 header nav a{
   font-family: HeliosThin;
   color:#000;
@@ -63,6 +65,10 @@ footer  {
 footer nav {
   font-size: rem-calc(20);
 }
+section h1.line{
+  text-align: center;
+  text-transform: uppercase;
+}
 .feedback input[type="submit"]{
   text-transform: uppercase;
   font-family: $font-family-serif !important;
@@ -73,5 +79,12 @@ footer nav {
   h4{
     font-family: HeliosThin !important;
     text-transform: uppercase;
+  }
+}
+.directions {
+  blockquote{
+     font-family: $font-family-serif;
+     font-size: 32px;
+
   }
 }
