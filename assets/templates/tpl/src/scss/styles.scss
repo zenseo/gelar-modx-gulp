@@ -18,7 +18,40 @@
 * feedback section
 *
 **/
+.feedback {
+  // @include grid-row();
+  h1{
+    @include grid-column(16);
+  }
+  label { @include grid-column(3);  }
+  input[type="text"]{
+    @include grid-column(13);
+  }
+  textarea{
+    @include grid-column(13);
+  }
+  .form-bottom{background: #f0f;}
+  img{
+       @include grid-column($columns:2, $push:3);
 
-form input[type="submit"]{
-  @include button();
+    }
+   input.capcha
+    {
+      @include grid-column(2,$push:3);
+    }
+
+  form input[type="submit"]{
+    @include grid-column($columns:2, $push:10);
+    padding: .5rem;
+    background: #fff;
+    color:#000;
+    border:1px solid #d9d9d9;
+    &:hover{
+      background: #d9d9d9;
+    }
+    &:active{
+      border-color:#000;
+    }
+
+}
 }

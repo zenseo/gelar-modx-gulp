@@ -63,3 +63,7 @@ footer  {
 footer nav {
   font-size: rem-calc(20);
 }
+.feedback input[type="submit"]{
+  text-transform: uppercase;
+  font-family: $font-family-serif !important;
+}
