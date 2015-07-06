@@ -1,50 +1,17 @@
 @import "../../bower_components/foundation/scss/normalize";
 @import "../../bower_components/foundation/scss/foundation";
 @import "typography";
+@import "elements"; // common elements
 @import "header";
 @import "footer";
 @import "feedback";
 @import "hero"; // main page big banner
 @import "directions"; // main page Directions section
-
-.container {
-  @include grid-row();
-  //foundation grid container
-  position: relative;
-}
-.line {
-  position: relative;
-  &::before{
-    display: block;
-    position: absolute;
-    bottom:-3px;
-    content:' ';
-
-    width: 200px;
-    height: 1px;
-    background: #d6d6d6;
-    left:calc(50% - 100px);
-  }
-}
-a.more{
-  text-transform: uppercase;
-  font-family: $font-family-serif;
-  color:#000;
-  text-decoration: none;
-  border-bottom: 1px solid #000;
-    &::before{content:"< ";}
-    &::after{content:" >";}
-    &:hover{border-color:#fff;}
-}
+@import "slider"; //main page carousel 1 item
 
 
 
-/*==========================================
-=            SLIDE on main page            =
-==========================================*/
 
 
-
-/*-----  End of SLIDE on main page  ------*/
 
 
