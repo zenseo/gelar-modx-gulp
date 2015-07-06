@@ -1,0 +1,73 @@
+
+/*============================================
+=            DIRECTIONS main page            =
+============================================*/
+
+.directions{
+  padding: 3rem -0px;
+  text-align: center;
+  blockquote{
+    color:#000;
+    border:none;
+    margin:0rem 0 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    line-height:130%;
+    &::before{
+      position: absolute;
+      left: 0;
+      top: 0;
+      content:' ';
+      display: block;
+      height: 21px;
+      width: 25px;
+      background:  url(../img/quotes.png) 0 0 no-repeat;
+    }
+
+    &::after{
+      position: absolute;
+      right: 0;
+      top: 0;
+      content:' ';
+      display: block;
+      height: 21px;
+      width: 25px;
+      background:  url(../img/quotes.png) 0 0 no-repeat;
+      background-position:-27px 0;
+    }
+
+  }
+  h1{
+
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+// **********ITEMS****************
+  article {
+    @include grid-column(4);
+    text-align: center;
+    h2{
+      text-transform: uppercase;
+    }
+    h3{
+       font-size: 17px;
+      text-transform: uppercase;
+        &::before{content:"< ";}
+        &::after{content:" >";}
+    }
+    p{text-align: justify;}
+
+  }//article
+
+  .line{margin-bottom: 2rem;}
+  p{text-align: justify;}
+
+
+
+
+//--------------------------------
+} //directions parent
+
+
+/*-----  End of DIRECTIONS main page  ------*/
