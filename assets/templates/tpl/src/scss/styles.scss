@@ -4,14 +4,14 @@
 @import "header";
 @import "footer";
 @import "feedback";
+@import "hero"; // main page big banner
 
-
-.container{
-  @include grid-row(); //foundation grid container
+.container {
+  @include grid-row();
+  //foundation grid container
   position: relative;
 }
+.line {
 
-
-
-
+}
 
