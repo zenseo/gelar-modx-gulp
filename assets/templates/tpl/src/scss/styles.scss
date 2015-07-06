@@ -12,6 +12,17 @@
   position: relative;
 }
 .line {
+  position: relative;
+  &::before{
+    display: block;
+    position: absolute;
+    bottom:-3px;
+    content:' ';
 
+    width: 200px;
+    height: 1px;
+    background: #d6d6d6;
+    left:calc(50% - 100px);
+  }
 }
 
