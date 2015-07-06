@@ -10,6 +10,44 @@
 @import "slider"; //main page carousel 1 item
 @import "slider"; //main page carousel 1 item
 @import "production"; //services carousel
+/*========================================
+=            PROJECTS section            =
+========================================*/
+.projects {
+  margin-top: 10rem;
+
+  width: 100%;
+  background: #000;
+  h1{
+    margin-top: -7rem;
+    margin-bottom: 7rem;
+  }
+  article {
+    @include grid-column(4);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    img{
+      height: 185px;
+      width: 220px;
+    }
+    h3{
+      color:#fff;
+
+    }
+    .more {
+      color:#fff;
+      border-color:#fff;
+      &:hover{
+        border-color:#000;
+      }
+    }
+  }
+
+}
+
+
+/*-----  End of PROJECTS section  ------*/
+
 
 
 
