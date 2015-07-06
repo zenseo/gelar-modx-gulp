@@ -32,7 +32,6 @@ footer nav {
 }
 footer address{
    @include grid-column(16);
- //  background: #faf;
   font-style: normal;
   text-align: center;
   a{
@@ -43,25 +42,7 @@ footer .social{
   @include grid-column(16);
   text-align: center;
   padding-top: 1rem;
-  li{
-    list-style:none;
-    display: inline-block;
-    height: 57px;
-    width: 57px;
-    border-radius:50%;
-    margin: 0 10px 0 0;
-    background: #fff url(../img/social-icons.png) no-repeat;
-    //  icons bg shift
-    &:nth-child(1){  background-position: -5px 0px;}
-    &:nth-child(2){  background-position: -71px 0px;}
-    &:nth-child(3){  background-position: -137px 0px;}
-    &:nth-child(4){  background-position: -206px 0px;}
-    &:nth-child(5){  background-position: -271px 0px;}
-    &:nth-child(6){  background-position: -345px 0px;}
-    &:nth-child(7){  background-position: -402px 0px;}
-    &:nth-child(8){  background-position: -470px 0px;}
-    &:nth-child(9){  background-position: -533px 0px;}
-  }
+
 }
 footer .design {
   display: block;

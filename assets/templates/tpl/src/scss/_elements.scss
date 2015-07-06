@@ -83,5 +83,27 @@ a.more{
     }
 
   }
+
+  .social{
+      li{
+    list-style:none;
+    display: inline-block;
+    height: 57px;
+    width: 57px;
+    border-radius:50%;
+    margin: 0 10px 0 0;
+    background: #fff url(../img/social-icons.png) no-repeat;
+    //  icons bg shift
+    &.vk{  background-position: -5px 0px;}
+    &.yt{  background-position: -71px 0px;}
+    &.vm{  background-position: -137px 0px;}
+    &.phone{  background-position: -206px 0px;}
+    &.email{  background-position: -271px 0px;}
+    &.fb{  background-position: -345px 0px;}
+    &.in{  background-position: -402px 0px;}
+    &.tw{  background-position: -470px 0px;}
+    &.gp{  background-position: -533px 0px;}
+  }
+  }
 /*-----  End of Common elements of all pages  ------*/
 
