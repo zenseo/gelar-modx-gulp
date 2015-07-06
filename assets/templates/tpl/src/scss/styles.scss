@@ -48,6 +48,37 @@
 
 /*-----  End of PROJECTS section  ------*/
 
+/*=========================================
+=            PRTHNERS CAROUSEL            =
+=========================================*/
+.partners{
+  h1{margin-bottom: 3rem;}
+  .carousel{
+    position: relative;
+    text-align: center;
+    margin-bottom: 3rem;
+    @include clearfix();
+     .prev,.next{
+      position: absolute;
+      height: 60px;
+      width: 29px;
+
+      top: 0px;
+
+    }
+    .prev{background:  url(../img/carousel-prev.jpg) 0 0 no-repeat;left: -30px;}
+    .next{background:  url(../img/carousel-next.jpg) 100% 0 no-repeat;right: -30px;}
+  }
+
+}
+
+
+/*-----  End of PRTHNERS CAROUSEL  ------*/
+
+.parthners{
+
+}
+
 
 
 
