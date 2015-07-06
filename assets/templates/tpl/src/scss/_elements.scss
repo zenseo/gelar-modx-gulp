@@ -1,0 +1,56 @@
+/*====================================================
+=            Common elements of all pages            =
+====================================================*/
+.container {
+  @include grid-row();
+  //foundation grid container
+  position: relative;
+}
+.line {
+  position: relative;
+  &::before{
+    display: block;
+    position: absolute;
+    bottom:-3px;
+    content:' ';
+
+    width: 200px;
+    height: 1px;
+    background: #d6d6d6;
+    left:calc(50% - 100px);
+  }
+}
+a.more{
+  text-transform: uppercase;
+  font-family: $font-family-serif;
+  color:#000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+    &::before{content:"< ";}
+    &::after{content:" >";}
+    &:hover{border-color:#fff;}
+}
+
+.scroll-down{
+  border-top: 20px solid #b0a290;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 65px;
+  &::after{
+    width: 100px;
+      height: 78px;
+      border-radius: 0 0 50% 50%;
+      background: #b0a290 url(../img/arr-down-light.png) 50% 84% no-repeat;
+      content: ' ';
+      position: absolute;
+      top: -49px;
+      left: calc(50% - 50px);
+
+
+
+  }
+}
+
+/*-----  End of Common elements of all pages  ------*/
+
