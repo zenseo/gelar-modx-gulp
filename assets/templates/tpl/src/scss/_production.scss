@@ -1,0 +1,37 @@
+
+/*==============================================
+=            SAV Production Section            =
+==============================================*/
+.production {
+  text-align: center;
+
+  p{text-align: justify;}
+
+  h3{text-transform: uppercase;}
+  .carousel{
+    position: relative;
+    @include clearfix;
+
+    article{
+      @include grid-column(4);
+    }
+    img{
+      width: 220px;
+      height: 185px;
+
+    }
+    .prev,.next{
+      position: absolute;
+      height: 60px;
+      width: 29px;
+      top: 62px;
+
+    }
+    .prev{background:  url(../img/carousel-prev.jpg) 0 0 no-repeat;left: -30px;}
+    .next{background:  url(../img/carousel-next.jpg) 100% 0 no-repeat;right: -30px;}
+  }
+
+}
+
+
+/*-----  End of SAV Production Section  ------*/
