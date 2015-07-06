@@ -1,42 +1,24 @@
 @import "../../bower_components/foundation/scss/normalize";
 @import "../../bower_components/foundation/scss/foundation";
-@import "test";
+@import "typography";
+@import "header";
+@import "footer";
+
 .container{
-  @include grid-row();
-}
-header .logo {
-  @include grid-column(4);
-}
-header nav {
-  @include grid-column(8);
-  li {
-      list-style:none;
-      display: inline-block;
-      ul {display: none;}
-  }
+  @include grid-row(); //foundation grid container
+  position: relative;
 }
 
-/**************************************/
-footer{
-  background: #000;
-}
-footer nav {
-  @include grid-column(12);
-  li {
-      list-style:none;
-      display: inline-block;
-      ul {display: none;}
-  }
-}
-footer .social{
-  li{
-    list-style:none;
-    display: inline-block;
-    height: 48px;
-    width: 48px;
-    border-radius:50%;
-    background: #fff;
 
 
-  }
+
+
+/**
+*
+* feedback section
+*
+**/
+
+form input[type="submit"]{
+  @include button();
 }
