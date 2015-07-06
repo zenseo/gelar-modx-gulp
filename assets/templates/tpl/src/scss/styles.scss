@@ -69,6 +69,11 @@
     .prev{background:  url(../img/carousel-prev.jpg) 0 0 no-repeat;left: -30px;}
     .next{background:  url(../img/carousel-next.jpg) 100% 0 no-repeat;right: -30px;}
   }
+  p{text-align: justify;
+  width: 100%;
+  display: inline-block;
+  border-bottom: 2px solid $gela1;
+padding-bottom: 2rem;}
 
 }
 
