@@ -16,6 +16,7 @@
   article {
     @include grid-column(4);
     text-align: center;
+    z-index: 2;
     h2{
       text-transform: uppercase;
     }
@@ -29,7 +30,7 @@
 
   }//article
 
-  .line{margin-bottom: 2rem;}
+  .line{margin-bottom: 2rem;display: inline-block;}
   p{text-align: justify;}
 
 
