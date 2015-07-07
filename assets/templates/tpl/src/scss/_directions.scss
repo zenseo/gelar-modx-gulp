@@ -1,43 +1,44 @@
-
 /*============================================
 =            DIRECTIONS main page            =
 ============================================*/
-
-.directions{
-  padding: 3rem -0px;
-  text-align: center;
-
-  h1{
-
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-// **********ITEMS****************
+.directions { padding: 1rem 0; text-align: center;
+  margin: 3rem auto;
+  @include clearfix();
+  h1 { text-align: center; margin-bottom: 3rem; }
   article {
     @include grid-column(4);
-    text-align: center;
-    z-index: 2;
-    h2{
-      text-transform: uppercase;
+    text-align: center; z-index: 2;
+    height: 522px;
+    min-height: 522px;
+    max-height: 522px;
+    margin-bottom: 3rem;
+    h2 { text-transform: uppercase; }
+    h3 { font-size: 17px; text-transform: uppercase;
+      &::before { content: "< "; }
+      &::after { content: " >"; }
     }
-    h3{
-       font-size: 17px;
-      text-transform: uppercase;
-        &::before{content:"< ";}
-        &::after{content:" >";}
-    }
-    p{text-align: justify;}
+    p { text-align: justify; }
+  }
+  span.line { margin-bottom: 2rem; display: inline-block; }
+  p { text-align: justify; }
+  .pagination{
 
-  }//article
-
-  span.line{margin-bottom: 2rem;display: inline-block;}
-  p{text-align: justify;}
-
-
-
-
-//--------------------------------
-} //directions parent
-
+  }
+}
+.pagination {
+font-family: $font-family-serif;
+text-transform: uppercase;
+text-align: center;
+font-size: rem-calc(24);
+margin: 2rem auto;
+a{
+  color:#000;
+  display: inline-block;
+  padding: 0 .5rem;
+  &:hover{
+    background: $gela1;
+  }
+}
+}
 
 /*-----  End of DIRECTIONS main page  ------*/

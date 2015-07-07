@@ -2,20 +2,14 @@
 @import "../../bower_components/foundation/scss/foundation";
 @import "typography";
 @import "elements";
-// common elements
+@import "page-elements";
 @import "header";
 @import "footer";
 @import "feedback";
 @import "hero";
-// main page big banner
 @import "directions";
-// main page Directions section
 @import "slider";
-//main page carousel 1 item
 @import "production";
-
-//services carousel
-
 /*========================================
 =            PROJECTS section            =
 ========================================*/
@@ -195,3 +189,29 @@
 }
 
 /*-----  End of CONTACTS   ------*/
+
+/*=====================================
+=            PAGE ELEMENTS            =
+=====================================*/
+.page-info{
+  @include grid-row();
+  .bcrumbs {
+    font-family: $font-family-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    a{
+      color: #c2c2c2;
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+.page-text{
+  @include grid-row();
+}
+
+
+/*-----  End of PAGE ELEMENTS  ------*/
+

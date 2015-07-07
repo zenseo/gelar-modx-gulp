@@ -3,7 +3,6 @@
 ====================================================*/
 .container {
   @include grid-row();
-  //foundation grid container
   position: relative;
 }
 .line {
@@ -20,6 +19,7 @@
     left:calc(50% - 100px);
   }
 }
+
 a.more{
   text-transform: uppercase;
   font-family: $font-family-serif;
@@ -46,19 +46,17 @@ a.more{
     position: absolute;
     top: -49px;
     left: calc(50% - 50px);
-
-
-
   }
 }
-  blockquote{
-    color:#000;
-    border:none;
-    margin:0rem 0 4rem;
-    text-transform: uppercase;
-    text-align: center;
-    position: relative;
-    line-height:130%;
+
+blockquote{
+  color:#000;
+  border:none;
+  margin:0rem 0 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  line-height:130%;
     &::before{
       position: absolute;
       left: 0;
@@ -69,7 +67,6 @@ a.more{
       width: 25px;
       background:  url(../img/quotes.png) 0 0 no-repeat;
     }
-
     &::after{
       position: absolute;
       right: 0;
@@ -81,11 +78,10 @@ a.more{
       background:  url(../img/quotes.png) 0 0 no-repeat;
       background-position:-27px 0;
     }
+}
 
-  }
-
-  .social{
-      li{
+.social{
+  li{
     list-style:none;
     display: inline-block;
     height: 57px;
@@ -94,16 +90,16 @@ a.more{
     margin: 0 10px 0 0;
     background: #fff url(../img/social-icons.png) no-repeat;
     //  icons bg shift
-    &.vk{  background-position: -5px 0px;}
-    &.yt{  background-position: -71px 0px;}
-    &.vm{  background-position: -137px 0px;}
-    &.phone{  background-position: -206px 0px;}
-    &.email{  background-position: -271px 0px;}
-    &.fb{  background-position: -345px 0px;}
-    &.in{  background-position: -402px 0px;}
-    &.tw{  background-position: -470px 0px;}
-    &.gp{  background-position: -533px 0px;}
+        &.vk{  background-position: -5px 0px;}
+        &.yt{  background-position: -71px 0px;}
+        &.vm{  background-position: -137px 0px;}
+        &.phone{  background-position: -206px 0px;}
+        &.email{  background-position: -271px 0px;}
+        &.fb{  background-position: -345px 0px;}
+        &.in{  background-position: -402px 0px;}
+        &.tw{  background-position: -470px 0px;}
+        &.gp{  background-position: -533px 0px;}
   }
-  }
+}
 /*-----  End of Common elements of all pages  ------*/
 
